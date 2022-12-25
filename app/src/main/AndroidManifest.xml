@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.layoutxml.twelveish">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-feature android:name="android.hardware.type.watch" />
 
@@ -22,9 +21,10 @@
             android:value="true" />
 
         <service
-            android:name=".MyWatchFace"
+            android:name="com.layoutxml.twelveish.MyWatchFace"
             android:label="@string/my_digital_name"
-            android:permission="android.permission.BIND_WALLPAPER">
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
             <meta-data
                 android:name="android.service.wallpaper"
                 android:resource="@xml/watch_face" />
@@ -54,28 +54,29 @@
         </service>
 
         <activity
-            android:name=".activities.list_activities.ActivityImageViewActivity"
-            android:label="@string/digital_config_name">
+            android:name="com.layoutxml.twelveish.activities.list_activities.ActivityImageViewActivity"
+            android:label="@string/digital_config_name"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.example.android.wearable.watchface.CONFIG_DIGITAL"/>
                 <category android:name="com.google.android.wearable.watchface.category.WEARABLE_CONFIGURATION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.list_activities.BooleanSwitcherActivity" />
-        <activity android:name=".activities.list_activities.StringTextViewActivity" />
-        <activity android:name=".activities.list_activities.IntegerTextViewOptionsActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.list_activities.BooleanSwitcherActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.list_activities.StringTextViewActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.list_activities.IntegerTextViewOptionsActivity" />
         <activity
-            android:name=".config.ComplicationConfigActivity"
+            android:name="com.layoutxml.twelveish.config.ComplicationConfigActivity"
             android:label="@string/digital_config_name">
         </activity>
         <activity android:name="android.support.wearable.complications.ComplicationHelperActivity"/>
-        <activity android:name=".activities.list_activities.ActivityTextViewActivity" />
-        <activity android:name=".activities.list_activities.IntegerImageViewActivity" />
-        <activity android:name=".activities.AboutActivity" />
-        <activity android:name=".activities.list_activities.FontTextViewActivity" />
-        <activity android:name=".activities.FontSizeActivity" />
-        <activity android:name=".activities.FontSizeInfoActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.list_activities.ActivityTextViewActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.list_activities.IntegerImageViewActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.AboutActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.list_activities.FontTextViewActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.FontSizeActivity" />
+        <activity android:name="com.layoutxml.twelveish.activities.FontSizeInfoActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
