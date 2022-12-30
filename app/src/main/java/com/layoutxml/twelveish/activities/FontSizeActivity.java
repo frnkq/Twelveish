@@ -26,8 +26,8 @@ public class FontSizeActivity extends Activity {
         setContentView(R.layout.font_size_activity);
 
         sharedPreferences = getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
-        main = sharedPreferences.getInt(getString(R.string.main_text_size_offset),0);
-        secondary = sharedPreferences.getInt(getString(R.string.secondary_text_size_offset),0);
+        main = sharedPreferences.getInt(getString(R.string.preference_main_text_offset),0);
+        secondary = sharedPreferences.getInt(getString(R.string.preference_secondary_text_offset),0);
 
         mainText = findViewById(R.id.batteryMin);
         secondaryText = findViewById(R.id.batteryMax);
@@ -42,8 +42,8 @@ public class FontSizeActivity extends Activity {
                 try {
                     int newMin = Integer.parseInt(mainText.getText().toString());
                     int newMax = Integer.parseInt(secondaryText.getText().toString());
-                    sharedPreferences.edit().putInt(getString(R.string.main_text_size_offset), newMin).apply();
-                    sharedPreferences.edit().putInt(getString(R.string.secondary_text_size_offset), newMax).apply();
+                    sharedPreferences.edit().putInt(getString(R.string.preference_main_text_offset), newMin).apply();
+                    sharedPreferences.edit().putInt(getString(R.string.preference_secondary_text_offset), newMax).apply();
                     Toast.makeText(getApplicationContext(), newMin + " and " + newMax + " set", Toast.LENGTH_SHORT).show();
                     finish();
                 } catch (NumberFormatException e) {

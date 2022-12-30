@@ -22,9 +22,9 @@ public class FontSizeInfoActivity extends Activity {
         Button okayButton = findViewById(R.id.okay);
 
         SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
-        int mainSize = sharedPreferences.getInt(getString(R.string.main_text_size_offset),0);
-        int secondarySize = sharedPreferences.getInt(getString(R.string.secondary_text_size_offset),0);
-        int actualMainTextSize = sharedPreferences.getInt(getString(R.string.main_text_size_real),24);
+        int mainSize = sharedPreferences.getInt(getString(R.string.preference_main_text_offset),0);
+        int secondarySize = sharedPreferences.getInt(getString(R.string.preference_secondary_text_offset),0);
+        int actualMainTextSize = sharedPreferences.getInt(getString(R.string.preference_main_text_size_real),24);
 
         main.setText("Usage not recommended.\n\n" +
                 "This option allows increasing or decreasing text sizes.\n\n" +

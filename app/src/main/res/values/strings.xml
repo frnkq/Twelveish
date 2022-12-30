@@ -36,17 +36,17 @@
     <string name="preference_font">font</string>
     <string name="preference_show_day">showDay</string>
     <string name="preference_show_day_ambient">showDayAmbient</string>
-    <string name="preference_tap">tapComplicationDisable</string>
+    <string name="preference_disable_complication_tap">tapComplicationDisable</string>
     <string name="preference_legacy_word_arrangement">legacyWords</string>
-    <string name="showed_rate">showedRate</string>
-    <string name="showed_tutorial">showedTutorial</string>
-    <string name="showed_donate">showedDonate</string>
-    <string name="counter">counter</string>
-    <string name="complication_left_set">complication_left_set</string>
-    <string name="complication_right_set">complication_right_set</string>
-    <string name="main_text_size_offset">mainTextSizeOffset</string>
-    <string name="secondary_text_size_offset">secondaryTextSizeOffset</string>
-    <string name="main_text_size_real">mainTextSizeReal</string>
+    <string name="preference_showed_rate_already">showedRate</string>
+    <string name="preference_showed_tutorial">showedTutorial</string>
+    <string name="preference_showed_donate">showedDonate</string>
+    <string name="preference_counter">counter</string>
+    <string name="preference_complication_left_set">complication_left_set</string>
+    <string name="preference_complication_right_set">complication_right_set</string>
+    <string name="preference_main_text_offset">mainTextSizeOffset</string>
+    <string name="preference_secondary_text_offset">secondaryTextSizeOffset</string>
+    <string name="preference_main_text_size_real">mainTextSizeReal</string>
 
     <string-array name="ExactTimes">
         <item>twelve</item>

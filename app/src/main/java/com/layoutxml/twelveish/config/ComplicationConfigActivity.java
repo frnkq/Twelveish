@@ -147,21 +147,21 @@ public class ComplicationConfigActivity extends Activity implements View.OnClick
             }
         } else if (watchFaceComplicationId == mLeftComplicationId) {
             if (complicationProviderInfo != null) {
-                prefs.edit().putBoolean(getString(R.string.complication_left_set),true).apply();
+                prefs.edit().putBoolean(getString(R.string.preference_complication_left_set),true).apply();
                 mLeftComplication.setImageIcon(complicationProviderInfo.providerIcon);
                 mLeftComplicationBackground.setVisibility(View.VISIBLE);
             } else {
-                prefs.edit().putBoolean(getString(R.string.complication_left_set),false).apply();
+                prefs.edit().putBoolean(getString(R.string.preference_complication_left_set),false).apply();
                 mLeftComplication.setImageDrawable(mDefaultAddComplicationDrawable);
                 mLeftComplicationBackground.setVisibility(View.INVISIBLE);
             }
         } else if (watchFaceComplicationId == mRightComplicationId) {
             if (complicationProviderInfo != null) {
-                prefs.edit().putBoolean(getString(R.string.complication_right_set),true).apply();
+                prefs.edit().putBoolean(getString(R.string.preference_complication_right_set),true).apply();
                 mRightComplication.setImageIcon(complicationProviderInfo.providerIcon);
                 mRightComplicationBackground.setVisibility(View.VISIBLE);
             } else {
-                prefs.edit().putBoolean(getString(R.string.complication_right_set),false).apply();
+                prefs.edit().putBoolean(getString(R.string.preference_complication_right_set),false).apply();
                 mRightComplication.setImageDrawable(mDefaultAddComplicationDrawable);
                 mRightComplicationBackground.setVisibility(View.INVISIBLE);
             }

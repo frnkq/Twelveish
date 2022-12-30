@@ -24,7 +24,8 @@
         <service
             android:name=".MyWatchFace"
             android:label="@string/my_digital_name"
-            android:permission="android.permission.BIND_WALLPAPER">
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
             <meta-data
                 android:name="android.service.wallpaper"
                 android:resource="@xml/watch_face" />
@@ -55,7 +56,8 @@
 
         <activity
             android:name=".activities.list_activities.ActivityImageViewActivity"
-            android:label="@string/digital_config_name">
+            android:label="@string/digital_config_name"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.example.android.wearable.watchface.CONFIG_DIGITAL"/>
                 <category android:name="com.google.android.wearable.watchface.category.WEARABLE_CONFIGURATION"/>

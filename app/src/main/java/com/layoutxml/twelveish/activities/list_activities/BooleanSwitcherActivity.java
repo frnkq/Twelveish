@@ -70,7 +70,7 @@ public class BooleanSwitcherActivity extends Activity {
 
         option = new BooleanOption();
         option.setName("Disable tapping on complications");
-        option.setKey(getString(R.string.preference_tap));
+        option.setKey(getString(R.string.preference_disable_complication_tap));
         option.setDefaultOption(false);
         values.add(option);
 
