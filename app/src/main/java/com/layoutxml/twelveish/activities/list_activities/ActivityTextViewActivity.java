@@ -50,40 +50,40 @@ public class ActivityTextViewActivity extends Activity{
     }
 
     private void generateColorOptionsListValues(){
-        ActivityOption dateOption = new ActivityOption();
-        dateOption.setName("Main text (active)");
-        dateOption.setActivity(IntegerImageViewActivity.class);
-        dateOption.setExtra("TextColor");
-        dateOption.setExtra2(getString(R.string.preference_main_color));
-        values.add(dateOption);
+        ActivityOption colorOption = new ActivityOption();
+        colorOption.setName("Main text (active)");
+        colorOption.setActivity(IntegerImageViewActivity.class);
+        colorOption.setExtra("TextColor");
+        colorOption.setExtra2(getString(R.string.preference_main_color));
+        values.add(colorOption);
 
-        dateOption = new ActivityOption();
-        dateOption.setName("Main text (ambient)");
-        dateOption.setActivity(IntegerImageViewActivity.class);
-        dateOption.setExtra("TextColor");
-        dateOption.setExtra2(getString(R.string.preference_main_color_ambient));
-        values.add(dateOption);
+        colorOption = new ActivityOption();
+        colorOption.setName("Main text (ambient)");
+        colorOption.setActivity(IntegerImageViewActivity.class);
+        colorOption.setExtra("TextColor");
+        colorOption.setExtra2(getString(R.string.preference_main_color_ambient));
+        values.add(colorOption);
 
-        dateOption = new ActivityOption();
-        dateOption.setName("Secondary text (active)");
-        dateOption.setActivity(IntegerImageViewActivity.class);
-        dateOption.setExtra("TextColor");
-        dateOption.setExtra2(getString(R.string.preference_secondary_color));
-        values.add(dateOption);
+        colorOption = new ActivityOption();
+        colorOption.setName("Secondary text (active)");
+        colorOption.setActivity(IntegerImageViewActivity.class);
+        colorOption.setExtra("TextColor");
+        colorOption.setExtra2(getString(R.string.preference_secondary_color));
+        values.add(colorOption);
 
-        dateOption = new ActivityOption();
-        dateOption.setName("Secondary text (ambient)");
-        dateOption.setActivity(IntegerImageViewActivity.class);
-        dateOption.setExtra("TextColor");
-        dateOption.setExtra2(getString(R.string.preference_secondary_color_ambient));
-        values.add(dateOption);
+        colorOption = new ActivityOption();
+        colorOption.setName("Secondary text (ambient)");
+        colorOption.setActivity(IntegerImageViewActivity.class);
+        colorOption.setExtra("TextColor");
+        colorOption.setExtra2(getString(R.string.preference_secondary_color_ambient));
+        values.add(colorOption);
 
-        dateOption = new ActivityOption();
-        dateOption.setName("Background (active)");
-        dateOption.setActivity(IntegerImageViewActivity.class);
-        dateOption.setExtra("BackgroundColor");
-        dateOption.setExtra2(getString(R.string.preference_background_color));
-        values.add(dateOption);
+        colorOption = new ActivityOption();
+        colorOption.setName("Background (active)");
+        colorOption.setActivity(IntegerImageViewActivity.class);
+        colorOption.setExtra("BackgroundColor");
+        colorOption.setExtra2(getString(R.string.preference_background_color));
+        values.add(colorOption);
 
         mAdapter.notifyDataSetChanged();
     }

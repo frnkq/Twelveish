@@ -510,7 +510,6 @@ public class MyWatchFace extends CanvasWatchFaceService {
             secondaryTextOffset = prefs.getInt(getString(R.string.secondary_text_size_offset),0);
 
             mTextPaint.setTextSize(getResources().getDisplayMetrics().heightPixels * 0.06f +secondaryTextOffset); //secondary text
-
             //Work with given preferences
             switch (language) {
                 case "nl":
